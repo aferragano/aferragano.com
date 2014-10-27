@@ -1,1 +1,9 @@
-index.html.erb
+<%= link_to "create new", new_design_path%>
+
+<% @designs.each do |d| %>
+	<%=d.title %>
+	<%=d.image_path %>
+	<%=link_to "show", design_path(d)%>
+
+<% end %>
+
