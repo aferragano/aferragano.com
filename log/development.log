@@ -1,0 +1,112 @@
+
+
+Started GET "/" for ::1 at 2014-10-26 14:33:39 -0400
+
+PG::ConnectionBad (FATAL:  database "aferragano_development" does not exist
+):
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:637:in `initialize'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:637:in `new'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:637:in `connect'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:239:in `initialize'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `block in checkout'
+  /Users/anthonyferragano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:347:in `checkout'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `block in connection'
+  /Users/anthonyferragano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:261:in `connection'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:563:in `retrieve_connection'
+  activerecord (4.2.0.beta2) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.0.beta2) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta4) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta4) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/anthonyferragano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/anthonyferragano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/anthonyferragano/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/anthonyferragano/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/anthonyferragano/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/anthonyferragano/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/anthonyferragano/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/anthonyferragano/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (28.4ms)
+
+
+Started PUT "/console/repl_sessions/f868c34a5c7698cb9c0d875bb2a2d833" for ::1 at 2014-10-26 14:33:48 -0400
+
+
+Started PUT "/console/repl_sessions/f868c34a5c7698cb9c0d875bb2a2d833" for ::1 at 2014-10-26 14:33:49 -0400
+
+
+Started PUT "/console/repl_sessions/f868c34a5c7698cb9c0d875bb2a2d833" for ::1 at 2014-10-26 14:33:49 -0400
+
+
+Started PUT "/console/repl_sessions/f868c34a5c7698cb9c0d875bb2a2d833" for ::1 at 2014-10-26 14:33:50 -0400
+
+
+Started PUT "/console/repl_sessions/f868c34a5c7698cb9c0d875bb2a2d833" for ::1 at 2014-10-26 14:33:50 -0400
+
+
+Started PUT "/console/repl_sessions/f868c34a5c7698cb9c0d875bb2a2d833" for ::1 at 2014-10-26 14:33:50 -0400
+
+
+Started PUT "/console/repl_sessions/f868c34a5c7698cb9c0d875bb2a2d833" for ::1 at 2014-10-26 14:33:51 -0400
+
+
+Started PUT "/console/repl_sessions/f868c34a5c7698cb9c0d875bb2a2d833" for ::1 at 2014-10-26 14:33:51 -0400
+
+
+Started PUT "/console/repl_sessions/f868c34a5c7698cb9c0d875bb2a2d833" for ::1 at 2014-10-26 14:33:51 -0400
+
+
+Started PUT "/console/repl_sessions/f868c34a5c7698cb9c0d875bb2a2d833" for ::1 at 2014-10-26 14:33:52 -0400
+
+
+Started PUT "/console/repl_sessions/f868c34a5c7698cb9c0d875bb2a2d833" for ::1 at 2014-10-26 14:33:52 -0400
+
+
+Started PUT "/console/repl_sessions/f868c34a5c7698cb9c0d875bb2a2d833" for ::1 at 2014-10-26 14:33:52 -0400
+
+
+Started PUT "/console/repl_sessions/f868c34a5c7698cb9c0d875bb2a2d833" for ::1 at 2014-10-26 14:33:52 -0400
+
+
+Started PUT "/console/repl_sessions/f868c34a5c7698cb9c0d875bb2a2d833" for ::1 at 2014-10-26 14:33:52 -0400
+
+
+Started PUT "/console/repl_sessions/f868c34a5c7698cb9c0d875bb2a2d833" for ::1 at 2014-10-26 14:33:53 -0400
