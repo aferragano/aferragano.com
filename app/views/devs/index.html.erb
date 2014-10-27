@@ -2,9 +2,9 @@ look at all of these devs
 <br>
 <% @devs.each do |d|%>
 	<%= d.title %><br>
-	<%= d.description %><br>
 	<%= d.image_path %><br>
-	<%= d.github_url %><br>
 	<%= d.user.username %><br>
 	<%= link_to "View More", ( dev_path(d))%>
+	<%= link_to "Edit", ( edit_dev_path(d))%>
+
 <%end%>
