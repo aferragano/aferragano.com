@@ -7,12 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<h1>AFERRAGANO</h1>
+	<h1><a href="/">AFERRAGANO</a></h1>
 	<nav>
 		<ul>
-			<li>Sign Up</li>
-			<li>Login </li>
-			<li>Logout </li>
+
+			<li><%=link_to "Login", login_path%></li>
+			<li><%=link_to "Signup", login_path%> </li>
+			<li><%=link_to "Logout", logout_path%> </li>
 		</ul>
 	</nav>
 
