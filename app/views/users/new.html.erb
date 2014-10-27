@@ -1,0 +1,32 @@
+
+
+<div class="login">
+	Log In
+<!-- 	<div class="error">
+	  <p><%=flash[:error]%></p>
+	</div> -->
+
+	<%=form_tag do %>
+	  <%=text_field_tag (:username), nil, placeholder: 'Username' %><br>
+	  <%=password_field_tag (:password), nil, placeholder: "Password" %><br>
+	  <%= submit_tag ("Log In") %><br>
+	<% end %>
+</div>
+
+
+<div class="sign-up">
+	Sign up <br>
+
+<!-- 	<div class="error">
+
+			<%= flash[:error]%>
+	</div> -->
+
+	<%= form_for @user do |f| %>
+	  <%= f.text_field :username, placeholder: "Username" %><br>
+	  <%= f.text_field :email, placeholder: "Email" %><br>
+	  <%= f.password_field :password, placeholder: "Password" %><br>
+	  <%= f.password_field :password_confirmation, placeholder: "Confirm Password" %><br>
+	  <%= f.submit "Sign Up" %><br>
+	<% end  %>
+</div>
