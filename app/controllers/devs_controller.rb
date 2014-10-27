@@ -11,6 +11,11 @@ class DevsController < ApplicationController
 	def show 
 		@dev = Dev.find(params[:id])
 	end
+
+	def edit 
+		@dev = Dev.find(params[:id])
+	end
+	
 	def create
 		@dev = Dev.new(dev_params)
 		@dev.user = User.find_by_id(session[:id])
