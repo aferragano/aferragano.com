@@ -1,0 +1,8 @@
+
+	<%= form_for @dev do |f| %>
+	  <%= f.text_field :title, placeholder: "Title" %><br>
+	  <%= f.text_area :description, placeholder: "Description" %><br>
+	  <%= f.text_field :image_path, placeholder: "Image" %><br>
+	  <%= f.text_field :github_url, placeholder: "Github_url" %><br>
+	  <%= f.submit "Save dev project" %><br>
+	<% end  %>
